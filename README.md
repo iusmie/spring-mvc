@@ -75,9 +75,11 @@ public class BaseTestCase {
 
 ```
 
-After run the test ,i got 404. When I debugged the springmvc test source , I got no found uri .
+After running the test ,i got 404. When I debugged the springmvc test source code, I got no found uri .
 
-Soulution: add / before the uri, the source below
+Soulution: 
+   add / before the uri, the source code below
+
 ```java
  @Test
     public void indextest() throws Exception {
@@ -90,6 +92,7 @@ Soulution: add / before the uri, the source below
 ```
 
 * Q3:java.lang.AssertionError: Status expected:<200> but was:<400> 
+
 Backgound: as same as Q2
 
 ```java
@@ -138,7 +141,7 @@ public class BaseTestCase {
 ```
 
 Soulution:
-  problem is that input param is not match @ReponseBody param
+   problem is that input param is not match @ReponseBody param
 
 ```java
 @Test
