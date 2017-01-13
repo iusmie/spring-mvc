@@ -5,24 +5,37 @@
 *  Q1: java.lang.NoSuchMethodError: javax.servlet.http.HttpServletRequest.isAsyncStarted()
   
    Background: 
+   
 >    Spring version: 4.3.2.RELEASE
+
 >    servlet-api:2.5
+
 >    spring-mock:2.0.8
+
 >    mockito-all:1.9.5
+
 >    hamcrest-core:1.3
+
 >    junit:4.12
    
    Solution: 
+   
     upgrade the servlet-api version less than 3.0, problem fixed
 
 * Q2:java.lang.AssertionError: Status expected:<200> but was:<404> 
 
   Background:
+  
 >    Spring version: 4.3.2.RELEASE
+
 >    servlet-api:3.0
+
 >    spring-mock:2.0.8
+
 >    mockito-all:1.9.5
+
 >    hamcrest-core:1.3
+
 >    junit:4.12
 
 ```java
