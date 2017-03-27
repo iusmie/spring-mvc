@@ -1,2 +1,9 @@
 > Error: Exception thrown by the agent : java.net.MalformedURLException: Local host name unknown: java.net.UnknownHostException: XXXX: XXXX: nodename nor servname provided, or not known
 
+how to solve:
+1.check /etc/hosts find 127.0.0.1 localhost
+2.scutil ––get HostName 
+
+if return value is not null,execute step 3
+
+3.scutil ––set HostName  'localhost'
